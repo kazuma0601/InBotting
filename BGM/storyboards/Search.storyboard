@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Search View Controller-->
+        <scene sceneID="T6l-kJ-Sq1">
+            <objects>
+                <viewController storyboardIdentifier="SearchViewController" modalPresentationStyle="fullScreen" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Tpz-4k-fYC" customClass="SearchViewController" customModule="BGM" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="WzQ-J4-XnU">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="OTt-22-LTG">
+                                <rect key="frame" x="0.0" y="100" width="375" height="567"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" red="0.1457507612" green="0.00048069992679999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="separatorColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="sectionIndexColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" rowHeight="58" id="4DV-9d-5oj">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="58"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="4DV-9d-5oj" id="T84-Yw-c4a">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="58"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                            <navigationBar contentMode="scaleToFill" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O1C-Ie-KnI">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                <color key="barTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <items>
+                                    <navigationItem id="FR5-hV-BIj"/>
+                                </items>
+                            </navigationBar>
+                            <searchBar contentMode="redraw" barStyle="black" placeholder="陰キャラ検索" showsCancelButton="YES" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B1Z-Rd-KYh">
+                                <rect key="frame" x="0.0" y="44" width="375" height="56"/>
+                                <color key="barTintColor" red="0.0" green="0.1908044441" blue="1" alpha="0.84705882349999995" colorSpace="custom" customColorSpace="sRGB"/>
+                                <textInputTraits key="textInputTraits" keyboardAppearance="alert"/>
+                                <scopeButtonTitles>
+                                    <string>Title</string>
+                                    <string>Title</string>
+                                </scopeButtonTitles>
+                            </searchBar>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Ubr-ar-CJc"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="O1C-Ie-KnI" firstAttribute="leading" secondItem="Ubr-ar-CJc" secondAttribute="leading" id="4W3-Vt-NQm"/>
+                            <constraint firstItem="OTt-22-LTG" firstAttribute="top" secondItem="B1Z-Rd-KYh" secondAttribute="bottom" id="Dkd-2K-ggh"/>
+                            <constraint firstItem="OTt-22-LTG" firstAttribute="leading" secondItem="Ubr-ar-CJc" secondAttribute="leading" id="Qf3-8S-C2l"/>
+                            <constraint firstItem="O1C-Ie-KnI" firstAttribute="top" secondItem="Ubr-ar-CJc" secondAttribute="top" id="YiK-7Z-lSN"/>
+                            <constraint firstItem="O1C-Ie-KnI" firstAttribute="trailing" secondItem="Ubr-ar-CJc" secondAttribute="trailing" id="aNQ-HG-U3A"/>
+                            <constraint firstItem="B1Z-Rd-KYh" firstAttribute="leading" secondItem="Ubr-ar-CJc" secondAttribute="leading" id="fzm-qF-SOe"/>
+                            <constraint firstItem="OTt-22-LTG" firstAttribute="bottom" secondItem="Ubr-ar-CJc" secondAttribute="bottom" id="hbL-gD-DdL"/>
+                            <constraint firstItem="B1Z-Rd-KYh" firstAttribute="top" secondItem="O1C-Ie-KnI" secondAttribute="bottom" id="l1E-vc-KY6"/>
+                            <constraint firstItem="OTt-22-LTG" firstAttribute="trailing" secondItem="Ubr-ar-CJc" secondAttribute="trailing" id="l5t-A4-FzJ"/>
+                            <constraint firstItem="B1Z-Rd-KYh" firstAttribute="trailing" secondItem="Ubr-ar-CJc" secondAttribute="trailing" id="xGw-vf-4iU"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="searchBar" destination="B1Z-Rd-KYh" id="kcc-LE-mox"/>
+                        <outlet property="searchTableView" destination="OTt-22-LTG" id="d4P-JJ-I8X"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Vpc-Oq-0sD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="104.8" y="61.619190404797607"/>
+        </scene>
+    </scenes>
+</document>
